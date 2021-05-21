@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import SearchScreen from "./src/screens/SearchScreen";
+import ResultsShowScreen from "./src/screens/ResultsShowScreen";
 
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
@@ -9,6 +10,7 @@ import { createStackNavigator } from "react-navigation-stack";
 const navigator = createStackNavigator(
   {
     Search: SearchScreen,
+    ResultsShow: ResultsShowScreen,
   },
   {
     initialRouteName: "Search",
