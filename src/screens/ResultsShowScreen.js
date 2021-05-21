@@ -10,7 +10,6 @@ const ResultsShowScreen = ({ navigation }) => {
 
   const getResult = async (id) => {
     const response = await yelp.get(`/${id}`);
-    console.log(response.data);
     setResult(response.data);
   };
 
